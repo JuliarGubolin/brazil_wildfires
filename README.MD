@@ -10,7 +10,7 @@ OBS: as consultas estão disponibilizadas acima. O arquivo .CSV pode ser encontr
 
 Antes de iniciar a análise, foi feita uma análise e **limpeza dos dados**, excluindo campos com valores nulos.
 
-#### **Os dados de resposta estão na pasta SQL/Respostas acima.**
+#### **Os dados de resposta estão na pasta SQL/Respostas acima. Para visualizar todos os dados, acesse o [link para o BigQuery](https://console.cloud.google.com/bigquery?sq=835913462870:060e2a8e008148f8b4a83d39ec6c7aba)!!**
 
 ## Perguntas/Questionamentos
 
