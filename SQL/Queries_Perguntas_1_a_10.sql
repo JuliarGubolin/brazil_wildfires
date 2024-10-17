@@ -94,3 +94,16 @@ bioma
 FROM `dias-de-codigo-alura.wildfires_brazil.wildfires_brazil`
 GROUP BY 2, 3
 ORDER BY 1;
+
+-- VERIFICANDO DUPLICATAS:
+
+SELECT COUNT(*) AS duplicatas
+FROM 
+(
+  select date_month, municipio, estado, bioma, avg_numero_dias_sem_chuva, avg_precipitacao, avg_risco_fogo, avg_frp,
+  count(*) as records
+  FROM `dias-de-codigo-alura.wildfires_brazil.wildfires_brazil`
+  group by 1, 2, 3, 4, 5, 6, 7, 8
+
+) a
+WHERE records > 1;
